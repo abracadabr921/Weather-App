@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    
+    <div class="video__container">
+      <video autoplay muted loop>
+        <source src="weather condition videos\sunset.mp4" type="video/mp4"/>
+      </video>
+    </div>
+    
+
+    <div class="blur__container"></div>
+
+
+    <div class="content">
+
+      <div class="dropdown"><input type="text" class="input__city" placeholder="Write a city">
+        <div class="dropdown__options"></div>
+      </div>
+
+      <img src="weather info icons\find.png" class="btn" onclick="requestWeather()">
+
+      <p class="city">City name, country code</p>
+
+
+      <div class="wrap">
+        <div class="info">
+          <span class="temperature">Temperature</span>
+          <span class="feels__like">Feels like</span>
+          <span class="wind__speed">Wind</span>
+          <span class="humidity">Humidity</span>
+          <span class="weather__info">Weather</span>
+        </div>
+
+        <div class="greeting day">
+          <img src="weather info icons\sun_emoji.png" alt="sun" class="sun">
+          <p class="hello">Have a good day!</p>
+        </div>
+
+        <div class="greeting night">
+          <img src="weather info icons\moon_emoji.png" alt="moon" class="moon">
+          <p class="hello">Good night</p>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="script.js"></script>
+      
+  </body>
+</html>

@@ -1,0 +1,253 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;  
+    justify-content: center;
+    align-items: center;   
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.blur__container{
+  width: 38vw;
+  height: 44vh;
+  position: absolute;
+
+  
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(8.4px);
+  z-index: 0;
+
+
+  min-width: 500px;
+  min-height: 380px;
+  max-height: 400px;
+}
+
+.content{
+  display: block;
+  width: 38vw;
+  height: 44vh;
+  background: rgb(255, 255, 255, 0);
+  z-index: 1;
+  box-sizing: border-box;
+  position: relative;
+  font-size: 27px;
+  border-radius: 16px;
+  padding: 20px 10px;
+  text-align: center;
+
+  min-width: 500px;
+  min-height: 380px;
+  max-height: 400px;
+
+}
+.dropdown{
+  display: inline-block;
+  position: relative;
+  height: 5vh;
+  width: 23vw;
+  margin: 10px auto;
+  cursor: pointer;
+
+  transition: .4s;
+  border-radius: 20px;
+  border: 0;
+
+  min-width: 200px;
+  max-height: 50px;
+
+}
+.dropdown:hover{
+  width: 27vw;
+  height: 6vh;
+  
+}
+.input__city{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  
+  border-radius: 20px;
+  border: 0;
+  text-align: center;
+  font-size: 17px;
+  transition: .4s;
+
+  min-width: 200px;
+  max-height: 50px;
+}
+.input__city:focus{
+  outline: none;
+}
+
+
+.dropdown__options{
+  margin: 0 auto;
+  width: 120%;
+  height: 170px;
+  position: absolute;
+  z-index: 2;
+  background-color: aliceblue;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+  border-radius: 20px;
+  right: 0;
+  scrollbar-color: black;
+  display: none;
+
+
+  background: rgba(0, 0, 0, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.8px);
+  -webkit-backdrop-filter: blur(10.8px);
+  background: rgba(0, 0, 0, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.8px);
+  -webkit-backdrop-filter: blur(10.8px);
+
+}
+.dropdown__options::-webkit-scrollbar {
+  width: 25px;
+}
+
+.dropdown__options::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  
+}
+
+.option{
+  font-size: 17px;
+  transition: .2s;
+}
+.option:hover{
+  font-size: 20px;
+}
+
+.btn{
+  display: inline-block;
+  width: 30px;
+  margin: -10px 10px;
+  border: none;
+  position: relative;
+  left: 0;
+  top: 0;
+  transition: .4s;
+  cursor: pointer;
+}
+.btn:hover{
+  width: 40px;
+}
+.btn:active{
+  width: 25px;
+}
+
+.city{
+  margin: 20px auto;
+  padding: 0;
+  font-weight: bold;
+  font-size: 20px;
+  
+}
+span{
+  display: block;
+  margin: 10px;
+}
+.info{
+  display: inline-block;
+  font-size: 17px;
+  text-align: left;
+  
+  width: 50%;
+  margin: 15px auto;
+  
+}
+.greeting{
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+  width: 35%;
+  border-radius: 20px;
+  margin: 10px 30px 0 0 ;
+  min-width: 140px;
+}
+.hello{
+  display: block;
+  width: 89%;
+  margin: 20% auto;
+}
+.wrap{
+  display: flex;
+  width: 100%;
+  height: 60%;
+}
+.sun, .moon{
+  width: 40%;
+  margin: 10% auto;
+  display: block;
+}
+.day{
+  background-color: skyblue;
+  display: block;
+}
+.day .hello{
+  margin: 10% auto;
+}
+.night{
+  background-color: #000043;
+  display: none;
+}
+.temperature:before{
+  content: '🌡️';
+  
+  margin: 0 7px 0 0;
+  display: inline-block;
+}
+.feels__like:before{
+  content: '🌡️';
+  
+  margin: 0 7px 0 0;
+  display: inline-block;
+}
+.wind__speed:before{
+  content: '🍃';
+  
+  margin: 0 7px 0 0;
+  display: inline-block;
+}
+.humidity:before{
+  content: '💧';
+ 
+  margin: 0 7px 0 0;
+  display: inline-block;
+}
+.weather__info:before{
+  content: '☁️';
+  
+  margin: 0 7px 0 0;
+  display: inline-block;
+}
