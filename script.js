@@ -298,6 +298,7 @@ async function getWeatherInfo() {
 
 // function for manual input, that calles after button click
 function requestWeather() {
+  funcIsNotClicked = true;
   cityName = document.querySelector(".input__city").value;
 
   //checks, if in input field nothing, warns user
